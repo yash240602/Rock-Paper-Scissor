@@ -235,7 +235,7 @@ def main():
             
             if st.button("Start Game", key="start_game"):
                 st.session_state.game_state = "playing"
-                st.experimental_rerun()
+                st.rerun()
         
         with col2:
             # Show sample image
@@ -290,7 +290,7 @@ def main():
                         st.session_state.game_state = "result"
                         st.session_state.last_image = annotated_image
                         
-                        st.experimental_rerun()
+                        st.rerun()
                     else:
                         st.error("No hand detected or unable to predict gesture. Please try again.")
         
@@ -312,7 +312,7 @@ def main():
                     
                     st.session_state.round_count += 1
                     st.session_state.game_state = "result"
-                    st.experimental_rerun()
+                    st.rerun()
             
             with col2:
                 if st.button("PAPER ✋"):
@@ -328,7 +328,7 @@ def main():
                     
                     st.session_state.round_count += 1
                     st.session_state.game_state = "result"
-                    st.experimental_rerun()
+                    st.rerun()
             
             with col3:
                 if st.button("SCISSORS ✌️"):
@@ -344,7 +344,7 @@ def main():
                     
                     st.session_state.round_count += 1
                     st.session_state.game_state = "result"
-                    st.experimental_rerun()
+                    st.rerun()
     
     elif st.session_state.game_state == "result":
         # Display the result
@@ -376,11 +376,11 @@ def main():
             # Check if game over
             if st.session_state.round_count >= st.session_state.max_rounds:
                 st.session_state.game_state = "gameover"
-                st.experimental_rerun()
+                st.rerun()
             else:
                 if st.button("Next Round"):
                     game.next_round()
-                    st.experimental_rerun()
+                    st.rerun()
         
         with col2:
             # Show the image with annotation if it exists
@@ -402,14 +402,14 @@ def main():
         
         if st.button("Play Again"):
             game.reset_game()
-            st.experimental_rerun()
+            st.rerun()
     
     # Always show these buttons
     col1, col2 = st.columns(2)
     with col1:
         if st.button("Reset Game"):
             game.reset_game()
-            st.experimental_rerun()
+            st.rerun()
     
     # Footer
     st.markdown("---")
