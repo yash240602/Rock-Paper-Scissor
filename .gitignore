@@ -1,0 +1,80 @@
+# Python Bytecode and Cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual Environments
+env/
+.venv/
+venv/
+ENV/
+*/env/
+*/.venv/
+*/venv/
+
+# Distribution / Installation
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+.pytest_cache/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# IDE / Editor specific
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# macOS / Windows specific
+.DS_Store
+Thumbs.db
+
+# Project Specific
+models/*.pkl
+models/*.joblib
+screenshots/
+debug_misclassifications/
+
+# Keep the latest model (optional - uncomment if you want to track it)
+# !models/rps_model_latest.pkl
+# !models/rps_model_latest.joblib
+
+# Large data files (if not already tracked)
+# data/ 
