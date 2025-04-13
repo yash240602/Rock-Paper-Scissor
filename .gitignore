@@ -71,10 +71,14 @@ models/*.pkl
 models/*.joblib
 screenshots/
 debug_misclassifications/
+data/
 
-# Keep the latest model (optional - uncomment if you want to track it)
-# !models/rps_model_latest.pkl
-# !models/rps_model_latest.joblib
+# Keep specific files (override ignores above)
+!screenshots/live_gameplay.png
 
-# Large data files (if not already tracked)
+# Keep the latest model (uncommented to include in Git for deployment)
+!models/rps_model_latest.pkl
+# !models/rps_model_latest.joblib # Keep commented unless .joblib is the one used
+
+# Large data files (if not already tracked) - Already handled by ignoring data/
 # data/ 
