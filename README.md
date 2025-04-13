@@ -3,6 +3,8 @@
 [![Python Version](https://img.shields.io/badge/python-3.9+-blue.svg)](https://www.python.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
+**[➡️ Live Demo on Streamlit Cloud](https://rock-paper-scisor-ai-game-dkvpjux3c2uffse8zyxdyh.streamlit.app/)**
+
 Play Rock Paper Scissors against an AI using your webcam! This project demonstrates an end-to-end machine learning pipeline for real-time hand gesture recognition, built with Python, OpenCV, MediaPipe, and Scikit-learn.
 
 ![Live Gameplay Screenshot](screenshots/live_gameplay.png)
